@@ -1,0 +1,22 @@
+body{
+    background:#fff8f0;
+    font-family:Arial, sans-serif;
+}
+
+.navbar-brand{
+    font-size:30px;
+    color:#7B002C !important;
+    font-weight:bold;
+}
+
+.nav-link{
+    font-weight:600;
+}
+
+.nav-link:hover{
+    color:#7B002C !important;
+}
+
+footer{
+    margin-top:80px;
+}
