@@ -1,0 +1,38 @@
+[
+    {
+        "NO":"1",
+        "PRODUCT":"ASCOR-1000",
+        "IMAGE":"photos/ascor-100.jpeg",
+        "PRICE":"120"
+    },                     
+    
+    {
+        "NO":"1",
+        "PRODUCT":"ADAMYCINE-GEL",
+        "IMAGE":"photos/adamycin.jpeg",
+        "PRICE":"120"
+    },                     
+    
+    {
+        "NO":"1",
+        "PRODUCT":"ITASPORE-100",
+        "IMAGE":"photos/itaspor-100.avif",
+        "PRICE":"120"
+    },                     
+    
+    {
+        "NO":"1",
+        "PRODUCT":"ASCOR-1000",
+        "IMAGE":"C:/kenish/website/medical/photos/ascor-100.jpeg",
+        "PRICE":"120"
+    },                     
+    
+    {
+        "NO":"1",
+        "PRODUCT":"ASCOR-1000",
+        "IMAGE":"C:/kenish/website/medical/photos/ascor-100.jpeg",
+        "PRICE":"120"
+    },     
+    
+]
+    

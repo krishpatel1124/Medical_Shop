@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h3 class="text-center mb-4">Avalibal product</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead class="thead-dark">
+    
+            <tr>
+                <th>No</th>
+                <th>Image</th>
+                <th>Medicine Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="tb">
+        </tbody>
+       </table>
+    
+    <button onclick=show()>show</button>
+    <script>
+        function show()
+        {
+            var a=new XMLHttpRequest();
+            a.open("GET","data.json",true);
+            a.onreadystatechange= function(){
+                if(a.readyState==4 && a.status==200)            {
+                var data=JSON.parse(a.responseText);
+                var tb=document.getElementById('tb');
+                for(var i=0;i<=data.length;i++)
+            {
+                var row=tb.insertRow();
+                row.insertCell(0).textContent=data[i].PRICE;
+                row.insertCell(0).textContent=data[i].PRODUCT;
+                row.insertCell(0).innerHTML = "<img src='"+data[i].IMAGE+"' width='100'>";
+                row.insertCell(0).textContent=data[i].NO;
+                
+            }
+            }
+            };
+            a.send();
+        }
+    </script>
+</body>
+
+</html>
